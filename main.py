@@ -660,12 +660,4 @@ def download_recording(filename):
         print(f"Download recording error: {e}")
         return jsonify({'error': 'Server error during file download'}), 500
 
-@app.route('/download-db/secret/code/bruh/get/out')
-def download_db():
-    db_path = 'database.db'  # Или '/data/database.db' для Persistent Disk
-    if os.path.exists(db_path):
-        return send_file(db_path, as_attachment=True)
-    else:
-        return "Файл database.db не найден", 404
-
 init_db()
