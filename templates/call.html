@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call</title>
+    <link rel="stylesheet" href="/static/styles4.css">
+</head>
+<body>
+    <div class="call-container">
+        <h1 id="callHeader">Video Call</h1>
+        <div class="call-info" id="callInfo">
+            <p id="callStatus">Connecting...</p>
+        </div>
+        <div class="video-container">
+            <video id="localVideo" autoplay playsinline muted></video>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        <div class="call-controls">
+            <button id="startCallButton" onclick="startCall()">Start Call</button>
+            <button id="endCallButton" onclick="endCall()" disabled>End Call</button>
+        </div>
+        <div id="errorMessage" class="error-message"></div>
+        <button onclick="window.location.href='/main'">Back to Chat</button>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

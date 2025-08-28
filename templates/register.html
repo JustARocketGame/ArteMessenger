@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <div class="register-form">
+            <input type="text" id="usernameInput" placeholder="Enter username" autocomplete="username">
+            <input type="email" id="emailInput" placeholder="Enter email" autocomplete="email">
+            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="new-password">
+            <button onclick="register()">Register</button>
+            <p>Already have an account? <a href="/">Login</a></p>
+            <p>Forgot your account? <a href="/recovery">Recover Account</a></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
