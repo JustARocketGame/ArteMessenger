@@ -660,6 +660,4 @@ def download_recording(filename):
         print(f"Download recording error: {e}")
         return jsonify({'error': 'Server error during file download'}), 500
 
-if __name__ == '__main__':
-    init_db()
-    app.run(debug=True)
+init_db()
