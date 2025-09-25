@@ -259,7 +259,7 @@ def check_auth(cookies):
 
 def send_recovery_email(email, username, recovery_id):
     sender = os.getenv("SMTP_EMAIL", "justarocketgame@gmail.com")
-    password = os.getenv("SMTP_PASSWORD", "uwkzefhbarxhtdgu")
+    password = os.getenv("SMTP_PASSWORD", "HALLO")
     recovery_link = f"http://localhost:5000/recovery?id={recovery_id}"
     msg = MIMEMultipart('alternative')
     msg['Subject'] = 'Account Recovery (Arte Messenger)'
